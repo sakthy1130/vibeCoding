@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# Allure CSV Report App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that regenerates interactive Allure reports from exported CSV files.
+
+## Problem Statement
+
+In our CI/CD pipeline, Jenkins is configured to retain only the **last 5 builds** to save disk space. Allure reports are generated as part of each build, but once a build is deleted, the associated Allure report is lost permanently. Attaching Allure report links to Jira tickets was not a reliable solution either — by the time someone revisits the ticket, the Jenkins build (and its report) is often already gone.
+
+## Solution
+
+To preserve test results long-term, we **download the CSV export from the Allure report** before the build is cleaned up. This app then allows anyone to **upload that CSV file and regenerate a full interactive Allure report** on demand — no Jenkins build required.
+
+### How It Works
+
+1. Export/download the CSV from an Allure report (before the Jenkins build is deleted)
+2. Upload the CSV file through this app's web UI
+3. The backend converts each CSV row into Allure-compatible JSON result files
+4. Allure generates a fresh interactive HTML report
+5. View the report instantly in your browser
+
+This ensures test execution history is always accessible, regardless of Jenkins build retention policies.
+
+---
 
 ## Available Scripts
 
@@ -68,3 +88,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
