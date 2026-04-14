@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <!-- Arabic text -->
+  <text x="100" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a237e">المــســـافر</text>
+  <!-- Almosafer text with colored 'o' -->
+  <text x="52" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a237e">Alm</text>
+  <text x="97" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#e53935">o</text>
+  <text x="111" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a237e">safer</text>
+  <!-- Subtitle -->
+  <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#888" letter-spacing="1">Travel &amp; Tourism Co.</text>
+</svg>
